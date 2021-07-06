@@ -16,12 +16,19 @@
   "scripts": {
     "dev": "rollup -c",
     "build": "shx rm -rf dist && rollup -c",
+    "test": "jest",
     "deploy": "deploy/action.sh"
   },
+  "jest": {
+    "testEnvironment": "node"
+  },
   "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
     "@rollup/plugin-commonjs": "^19.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.0.0",
+    "babel-jest": "^27.0.6",
     "commander": "^8.0.0",
     "eslint": "^7.30.0",
     "eslint-config-airbnb-base": "^14.2.1",
@@ -29,10 +36,13 @@
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-prettier": "^3.4.0",
     "inquirer": "^8.1.1",
+    "jest": "^27.0.6",
+    "memfs": "^3.2.2",
     "prettier": "^2.3.2",
     "rollup": "^2.52.7",
     "semver": "^7.3.5",
-    "shx": "^0.3.3"
+    "shx": "^0.3.3",
+    "webpack": "^5.42.1"
   },
   "dependencies": {
     "loader-utils": "^2.0.0",
