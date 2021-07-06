@@ -1,3 +1,5 @@
-# THIS IS DEVELOPMENT ENVIRONMENT SVG FILE PX TO REM TOOL
+# SEMI SVG FILE TOOL
 
-created by tangji
+## this is a development environment which convert svg file px to rem tool
+
+## created by tangji
