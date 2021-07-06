@@ -42,13 +42,11 @@
     "rollup": "^2.52.7",
     "semver": "^7.3.5",
     "shx": "^0.3.3",
+    "svg-inline-loader": "^0.8.2",
     "webpack": "^5.42.1"
   },
   "dependencies": {
     "loader-utils": "^2.0.0",
     "schema-utils": "^3.1.0"
-  },
-  "peerDependencies": {
-    "svg-inline-loader": "^0.8.2"
   }
 }
