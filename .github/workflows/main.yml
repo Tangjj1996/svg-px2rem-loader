@@ -13,4 +13,4 @@ jobs:
         with:
           node-version: 16.x
       - name: Run a jest script
-        run: yarn jest
+        run: yarn test
