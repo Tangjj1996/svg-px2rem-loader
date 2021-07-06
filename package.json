@@ -7,10 +7,16 @@
     "dist",
     "src"
   ],
+  "keywords": [
+    "webpack",
+    "webpack loader",
+    "svg",
+    "convert svg px to rem"
+  ],
   "scripts": {
     "dev": "rollup -c",
     "build": "shx rm -rf dist && rollup -c",
-    "deploy": "node deploy/select.js"
+    "deploy": "deploy/action.sh"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^19.0.0",

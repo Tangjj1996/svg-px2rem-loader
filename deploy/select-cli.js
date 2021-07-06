@@ -7,7 +7,7 @@ const semver = require('semver')
 const { program } = require('commander')
 
 const prompt = inquirer.createPromptModule({ output: process.stderr })
-const PACKAGE = require(process.cwd(), 'package.json')
+const PACKAGE = require(path.resolve(__dirname, '../package.json'))
 
 program.version(PACKAGE.version)
 
@@ -30,7 +30,7 @@ program.parse(process.argv)
 
 function getReleaseVersion() {
   return new Promise((resolve, reject) => {
-    const dir = path.resolve(process.cwd(), 'package.json')
+    const dir = path.resolve(__dirname, '../package.json')
     if (!fs.existsSync(dir)) {
       reject(new Error(dir + "doesn't exit"))
       return
