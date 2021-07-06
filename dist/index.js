@@ -15583,7 +15583,6 @@ function svgPx2rem(source) {
     return _
   });
 
-  console.log(source);
   return source
 }
 

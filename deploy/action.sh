@@ -6,7 +6,9 @@ yarn build
 
 VERSION=`node deploy/select-cli.js`
 
+git add -A
+git commit -m "feat: [release] $VERSOIN"
+npm version $VERSION
+npm publish --tag
 
-npm version $VERSION -m "[release] $VERSION"
-npm publish
 echo -e "\033[32mrelease: $VERSION\033[0m"
