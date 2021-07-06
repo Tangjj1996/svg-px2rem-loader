@@ -15564,8 +15564,8 @@ var dist = {
 const schema = {
   type: 'object',
   properties: {
-    isOpen: {
-      type: 'boolean',
+    rootValue: {
+      type: 'number',
     },
   },
 };
@@ -15573,12 +15573,12 @@ const schema = {
 function svgPx2rem(source) {
   const options = getOptions_1(this);
 
-  dist(schema, options, 'svg-px2rem loader');
+  dist.validate(schema, options, 'svg-px2rem loader');
 
   const reg = /(?<=width[\s=]*['"]+|height[\s=]*['"]+)(?:(\d+)px)?/gi;
   source = source.replace(reg, (_, g1) => {
     if (_) {
-      return (g1 / 32).toFixed(4) + 'rem'
+      return (g1 / options.rootValue).toFixed(4) + 'rem'
     }
     return _
   });

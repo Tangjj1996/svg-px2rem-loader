@@ -14,10 +14,17 @@ export default (fixture, options = {}) => {
       rules: [
         {
           test: /\.svg$/,
-          use: {
-            loader: path.resolve(__dirname, '../dist/index.js'),
-            options,
-          },
+          use: [
+            {
+              loader: 'svg-inline-loader',
+            },
+            {
+              loader: path.resolve(__dirname, '../dist/index.js'),
+              options: {
+                rootValue: 32,
+              },
+            },
+          ],
         },
       ],
     },
