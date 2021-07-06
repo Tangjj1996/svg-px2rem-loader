@@ -6,7 +6,7 @@ on:
 jobs:
   jest:
     runs-on: ubuntu-latest
-    stratege:
+    strategy:
       matrix:
         node: [10, 12, 14]
     steps:
