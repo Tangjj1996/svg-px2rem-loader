@@ -4,17 +4,17 @@ import rollupCommonjs from '@rollup/plugin-commonjs'
 import rollupJson from '@rollup/plugin-json'
 
 export default {
-    input: resolve(__dirname, 'src/index.js'),
-    output: [
-        {
-            file: 'dist/index.js',
-            format: 'cjs',
-            exports: 'default', // you should set out.export to 'auto' or 'default' while you are using es-module export default syntax
-        },
-        {
-            file: 'dist/es-module.js',
-            format: 'esm',
-        },
-    ],
-    plugins: [rollupResolve(), rollupCommonjs(), rollupJson()],
+  input: resolve(__dirname, 'src/index.js'),
+  output: [
+    {
+      file: 'dist/index.js',
+      format: 'cjs',
+      exports: 'default', // you should set out.export to 'auto' or 'default' while you are using es-module export default syntax
+    },
+    {
+      file: 'dist/es-module.js',
+      format: 'esm',
+    },
+  ],
+  plugins: [rollupResolve(), rollupCommonjs(), rollupJson()],
 }
