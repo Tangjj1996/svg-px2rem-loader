@@ -17,6 +17,9 @@ export default (fixture, options = {}) => {
           use: [
             {
               loader: 'svg-inline-loader',
+              options: {
+                removeSVGTagAttrs: false,
+              },
             },
             {
               loader: path.resolve(__dirname, '../dist/index.js'),

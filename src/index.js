@@ -22,5 +22,6 @@ export default function svgPx2rem(source) {
     }
     return _
   })
+
   return source
 }
