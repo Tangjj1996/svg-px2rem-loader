@@ -11,10 +11,10 @@
 
 ## Options
 
-| name         | type    | default | description                                                            |
-| ------------ | ------- | ------- | ---------------------------------------------------------------------- |
-| rootValue    | number  | 32      | a root value for convert px to rem, it likes root(html) font-size      |
-| isLastLoader | boolean | false   | if set `true` means this loader is the lastest l l loader for svg file |
+| name         | type    | default | description                                                        |
+| ------------ | ------- | ------- | ------------------------------------------------------------------ |
+| rootValue    | number  | 32      | a root value for convert px to rem, it likes root(html) font-size  |
+| isLastLoader | boolean | false   | if set `true` means this loader is the lastest loader for svg file |
 
 [github-build]: https://img.shields.io/github/workflow/status/Tangjj1996/svg-px2rem-loader/Test
 [github-build-url]: https://github.com/Tangjj1996/svg-px2rem-loader/actions/workflows/main.yml
