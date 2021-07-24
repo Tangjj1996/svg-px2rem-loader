@@ -8,8 +8,8 @@ VERSION=`node deploy/select-cli.js`
 
 rm -rf dist
 
-npm run test
 npm run build
+npm run test
 
 git add -A
 npm version --force $VERSION -m "feat: [release] v$VERSION success"

@@ -12,7 +12,7 @@ test('Inserts name add outputs javascript', async () => {
   expect(output).toMatch('rem')
 })
 
-test('Inserts name add outputs javascript when is the lastest laoder', async () => {
+test('Inserts name add outputs javascript when is the lastest loader', async () => {
   const stats = await compilerAsLastloader('example.svg')
   const output = stats.toJson({ source: true }).modules[0].source
 
