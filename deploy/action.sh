@@ -6,8 +6,6 @@ yarn build
 
 VERSION=`node deploy/select-cli.js`
 
-rm -rf dist
-
 npm run build
 npm run test
 
