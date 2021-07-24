@@ -7,12 +7,12 @@ export default {
   input: resolve(__dirname, 'src/index.js'),
   output: [
     {
-      file: 'dist/index.js',
+      file: 'dist/cjs.js',
       format: 'cjs',
       exports: 'default', // you should set out.export to 'auto' or 'default' while you are using es-module export default syntax
     },
     {
-      file: 'dist/index.esm.js',
+      file: 'dist/index.js',
       format: 'esm',
     },
   ],
