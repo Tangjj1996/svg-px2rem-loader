@@ -6,6 +6,11 @@ yarn build
 
 VERSION=`node deploy/select-cli.js`
 
+rm -rf dist
+
+npm run test
+npm run build
+
 git add -A
 npm version --force $VERSION -m "feat: [release] v$VERSION success"
 npm publish

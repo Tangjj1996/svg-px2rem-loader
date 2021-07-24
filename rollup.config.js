@@ -12,7 +12,7 @@ export default {
       exports: 'default', // you should set out.export to 'auto' or 'default' while you are using es-module export default syntax
     },
     {
-      file: 'dist/es-module.js',
+      file: 'dist/index.esm.js',
       format: 'esm',
     },
   ],
