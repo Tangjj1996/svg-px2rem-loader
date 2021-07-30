@@ -1,8 +1,9 @@
 name: Test
 
 on:
-  push:
-    branches: [master]
+  tags:
+    - 'v*'
+
 jobs:
   jest:
     runs-on: ubuntu-latest
