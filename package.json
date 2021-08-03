@@ -1,6 +1,6 @@
 {
   "name": "svg-px2rem-loader",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "dist/cjs.js",
   "license": "MIT",
   "files": [
