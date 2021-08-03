@@ -8,6 +8,9 @@
     "src"
   ],
   "homepage": "https://github.com/Tangjj1996/svg-px2rem-loader",
+  "repository": {
+    "url": "git@github.com:Tangjj1996/svg-px2rem-loader.git"
+  },
   "bugs": {
     "url": "https://github.com/Tangjj1996/svg-px2rem-loader"
   },
