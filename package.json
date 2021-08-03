@@ -7,6 +7,15 @@
     "dist",
     "src"
   ],
+  "homepage": "https://github.com/Tangjj1996/svg-px2rem-loader",
+  "bugs": {
+    "url": "https://github.com/Tangjj1996/svg-px2rem-loader"
+  },
+  "author": {
+    "name": "jj-Gu",
+    "url": "https://github.com/Tangjj1996",
+    "email": "awesometangji@gmail.com"
+  },
   "keywords": [
     "webpack",
     "webpack loader",
