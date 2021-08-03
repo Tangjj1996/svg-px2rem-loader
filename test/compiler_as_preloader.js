@@ -2,7 +2,7 @@ import path from 'path'
 import webpack from 'webpack'
 import { createFsFromVolume, Volume } from 'memfs'
 
-export default (fixture, options = {}) => {
+export default (fixture) => {
     const compiler = webpack({
         context: __dirname,
         entry: `./${fixture}`,
