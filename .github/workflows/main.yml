@@ -1,8 +1,9 @@
 name: Test
 
 on:
-  tags:
-    - 'v*'
+  push:
+    tags:
+      - v**
 
 jobs:
   jest:
