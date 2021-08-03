@@ -1,7 +1,5 @@
-'use strict';
-
-require('path');
-require('crypto');
+import 'path';
+import 'crypto';
 
 var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
 
@@ -15752,4 +15750,4 @@ function svgPx2rem(source) {
     return source
 }
 
-module.exports = svgPx2rem;
+export default svgPx2rem;

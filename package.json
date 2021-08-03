@@ -28,6 +28,9 @@
     "@rollup/plugin-commonjs": "^19.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.0.0",
+    "@rollup/plugin-typescript": "^8.2.5",
+    "@typescript-eslint/eslint-plugin": "^4.29.0",
+    "@typescript-eslint/parser": "^4.29.0",
     "babel-jest": "^27.0.6",
     "commander": "^8.0.0",
     "eslint": "^7.30.0",
@@ -43,6 +46,7 @@
     "semver": "^7.3.5",
     "shx": "^0.3.3",
     "svg-inline-loader": "^0.8.2",
+    "typescript": "^4.3.5",
     "webpack": "^5.42.1"
   },
   "dependencies": {
