@@ -2,10 +2,10 @@ import { resolve } from 'path'
 import rollupResolve from '@rollup/plugin-node-resolve'
 import rollupCommonjs from '@rollup/plugin-commonjs'
 import rollupJson from '@rollup/plugin-json'
-import typescript from '@rollup/plugin-typescript'
+import typescript from 'rollup-plugin-typescript2'
 
 export default {
-  input: resolve(__dirname, 'src/index.js'),
+  input: resolve(__dirname, 'src/index.ts'),
   output: [
     {
       file: 'dist/index.js',
@@ -17,5 +17,12 @@ export default {
       format: 'esm',
     },
   ],
-  plugins: [typescript(), rollupResolve(), rollupCommonjs(), rollupJson()],
+  plugins: [
+    typescript({
+      tsconfig: './tsconfig.json',
+    }),
+    rollupResolve(),
+    rollupCommonjs(),
+    rollupJson(),
+  ],
 }

@@ -1,7 +1,6 @@
 /**
  * @jest-environment node
  */
-import { test, expect } from '@jest/globals'
 import compilerAsPreloader from './compiler_as_preloader'
 import compilerAsLastloader from './compiler_as_lastloader'
 

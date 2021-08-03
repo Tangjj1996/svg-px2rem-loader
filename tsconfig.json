@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
-    "target": "ES5",
-    "module": "esnext"
+    "module": "esnext",
+    "moduleResolution": "node",
+    "declaration": true
   },
   "include": ["src/**/*.ts"]
 }

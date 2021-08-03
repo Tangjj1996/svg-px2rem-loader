@@ -13,6 +13,7 @@
     "svg",
     "convert svg px to rem"
   ],
+  "types": "dist/index.d.ts",
   "scripts": {
     "dev": "rollup -c",
     "build": "shx rm -rf dist && rollup -c",
@@ -28,7 +29,7 @@
     "@rollup/plugin-commonjs": "^19.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.0.0",
-    "@rollup/plugin-typescript": "^8.2.5",
+    "@types/loader-utils": "^2.0.3",
     "@typescript-eslint/eslint-plugin": "^4.29.0",
     "@typescript-eslint/parser": "^4.29.0",
     "babel-jest": "^27.0.6",
@@ -43,6 +44,7 @@
     "memfs": "^3.2.2",
     "prettier": "^2.3.2",
     "rollup": "^2.52.7",
+    "rollup-plugin-typescript2": "^0.30.0",
     "semver": "^7.3.5",
     "shx": "^0.3.3",
     "svg-inline-loader": "^0.8.2",
@@ -50,7 +52,6 @@
     "webpack": "^5.42.1"
   },
   "dependencies": {
-    "loader-utils": "^2.0.0",
-    "schema-utils": "^3.1.0"
+    "loader-utils": "^2.0.0"
   }
 }
